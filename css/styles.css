@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700|DM+Serif+Display:400,400i&display=swap');
+
+body {
+	font-family: 'DM Sans', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #343740;
+	color: #495062;
+	box-sizing: border-box;
+}
+figure, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'DM Serif Display', serif;
+	letter-spacing: 0.5px;
+}
+a {
+	text-decoration: none;
+	color: #7dacbc;
+}
+.wrapper {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.header {
+	width: 100%;
+	background: white;
+}
+.header .title {
+	text-transform: lowercase;
+	font-size: 28px;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	font-style: italic;
+	cursor: pointer;
+}
+.header .title:after {
+	width: 30px;
+	height: 1px;
+	content: '';
+	display: block;
+	position: absolute;
+	background: #dad1ca;
+	bottom: 0;
+	left:0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	width: 100%;
+}
+.main-navigation ul {
+	display: flex;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.main-navigation ul li {
+	list-style: none;
+	flex-grow: 1;
+	margin: 10px;
+	text-align: center;
+
+}
+.main-navigation ul li a {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #333;
+	font-size: 12px;
+}
+.hero figure {
+	width: 100%;
+	max-height: 70vh;
+	overflow: hidden;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.hero img {
+	width: 100%;
+	max-width: 100%;
+	margin: -100px auto 0;
+}
+.hero .copy {
+	width: 70%;
+	max-width: 600px;
+	background: #f3f3f3;
+	padding: 30px;
+	margin: -100px auto 0;
+	position: relative;
+	text-align: center;
+}
+.hero .copy h2 {
+	font-size: 26px;
+	text-transform: lowercase;
+	padding: 5px 0;
+}
+
+.hero .copy p {
+	width: 80%;
+	max-width: 400px;
+	margin: 10px auto;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	margin-top: 60px;
+}
+.content .post {
+	max-width: 30%;
+	margin: 10px;
+	float: left;
+	flex-grow: 1;
+	background: white;
+	/*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);*/
+}
+
+.post img {
+	max-width:  100%;
+}
+
+.content .post > div {
+	padding: 40px;
+}
+.content .meta {
+	color: #c1a7a3;
+	margin: 10px 0;
+	font-weight: 100;
+	font-size: 11px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.content h3 {
+	text-transform: lowercase;
+	font-size: 18px;
+	/*letter-spacing: 2px;*/
+	/*font-family: 'DM Sans', Helvetica, Arial, sans-serif;*/
+}
+.content a {
+	display: block;
+	margin: 20px 0;
+}
