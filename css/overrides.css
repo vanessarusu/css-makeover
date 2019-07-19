@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Arya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Arya', sans-serif;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+}
+
+.content h3 {
+	font-size: 22px;
+}
+
+.meta {
+	font-family: 'Arya', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.content .post {
+	max-width: 50%;
+	margin: 0;
+}
+
+.content .post:first-of-type {
+	max-width: 100%;
+	display: flex;
+}
+
+.logo {
+	float: left;
+	width: 40%;
+}
+.header .title {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.header .title:after {
+	display: none;
+}
+
+.main-navigation {
+	float: left;
+	width: 60%;
+}

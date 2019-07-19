@@ -17,6 +17,7 @@ body {
 figure, ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+	text-transform: lowercase;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -31,7 +32,14 @@ p {
 a {
 	text-decoration: none;
 	color: #7dacbc;
+	transition: color 0.1s ease;
 }
+@media (max-width: 800px) {
+	a:hover {
+		color: #dca678;
+	}
+}
+
 body.modal-open {
 	position: fixed;
 }
@@ -49,7 +57,6 @@ body.modal-open {
 }
 
 .header .title {
-	text-transform: lowercase;
 	font-size: 18px;
 	text-align: center;
 	padding-bottom: 10px;
@@ -172,7 +179,6 @@ body.modal-open {
 
 .hero .copy h2 {
 	font-size: 26px;
-	text-transform: lowercase;
 	padding: 5px 0;
 }
 
@@ -312,6 +318,7 @@ body.modal-open {
 }
 
 .instagram ul li {
+	display: inline-flex;
 	flex-grow: 1;
 	width: calc(100% / 6);
 	list-style: none;
@@ -325,6 +332,9 @@ body.modal-open {
 	max-width: 100%;
 }
 
+.instagram ul li a {
+	margin: 0 auto;
+}
 footer {
 	background: #343740;
 	padding: 20px;
@@ -341,30 +351,61 @@ footer a {
 	color: #c1a7a3;
 }
 
+@media (max-width : 800px) {
+	.content .post {
+		max-width: 100%;
+	}
+	.featured-post {
+		display: block;
+	}
+	.featured-post figure {
+		width: 100%;
+		max-width: 100%;
+	}
+	.featured-post > div {
+		width: 90%;
+		max-width: 100%;
+		margin: 30px auto;
+	}
+	.instagram h4,
+	.instagram li:first-of-type a {
+		font-size: 12px;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
 @media (max-width: 600px) {
 	.hamburger {
 		display: block;
 	}
+
 	.mobile-open .hamburger span {
 		top: 5px;
 	}
+
 	.mobile-open .hamburger span:first-of-type {
 		transform: rotate(135deg);
 	}
+
 	.mobile-open .hamburger span:last-of-type {
 		transform: rotate(45deg);
 	}
+
 	.mobile-open .hamburger span:nth-child(2) {
 		opacity: 0;
 	}
+
 	.main-navigation ul li {
 		width: 100%;
 		padding: 10px;
 	}
+
 	.mobile-open .main-navigation ul {
 		left: 0;
 
 	}
+
 	.main-navigation ul {
 		display: block;
 		position: fixed;
@@ -385,12 +426,17 @@ footer a {
 		left: 100%;
 		transition: all 0.2s ease;
 	}
+
 	.main-navigation ul li a {
 		font-size: 16px;
 		font-family: 'DM Serif Display', serif;
 		text-transform: lowercase;
 		letter-spacing: 0;
 		font-style: italic;
+	}
+
+	.instagram ul li:nth-child(n+4) {
+		display: none;
 	}
 }
 
@@ -401,6 +447,4 @@ footer a {
 	to {
 		opacity: 1;
 	}
-
 }
-
